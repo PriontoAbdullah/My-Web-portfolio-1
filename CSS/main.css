@@ -1,0 +1,664 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Ubuntu', Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ====================== Nav Bar ====================== */
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.247);
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 9vh;
+}
+
+.my-logo {
+    width: 2.5%;
+    float: left;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.logo-items {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+.logo-links {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 10px;
+}
+
+.prionto {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 1px;
+    font-size: 130%;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: rgb(69, 158, 173);
+    letter-spacing: 2px;
+    width: 120px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, blink 1s infinite;
+    animation-iteration-count: infinite;
+}
+
+.nav-items {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+
+.nav-items a:link,
+.nav-items a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: rgb(67, 158, 161);
+    font-weight: 400;
+    font-size: 95%;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-items a:hover,
+.nav-items a:active {
+    color: rgb(105, 105, 105);
+    border-bottom: 2px solid rgb(105, 105, 105);
+}
+
+
+/*--=============== Section 1 - Home =================--*/
+
+#home {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left {
+    width: 40%;
+    float: left;
+    padding-left: 80px;
+    margin-top: 80px;
+}
+
+.left h1 {
+    padding: 0 auto;
+    font-size: 200%;
+    color: rgb(59, 59, 59);
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.left h2 {
+    padding: 0 auto;
+    margin: 15px 0;
+    font-size: 180%;
+    color: rgb(59, 59, 59);
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+.name-highlight {
+    color: tomato;
+}
+
+.typing-animation {
+    font-weight: 500;
+    width: 660px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s, blink 1s infinite;
+    animation-iteration-count: 1;
+}
+
+@keyframes typing {
+    0% {
+        width: 0px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    color: dimgray;
+    text-align: justify;
+    margin: 25px auto;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    line-height: 155%;
+}
+
+.type-highlight {
+    color: rgb(67, 158, 161);
+}
+
+.link {
+    margin-top: 30px;
+}
+
+.hire-me {
+    margin-top: 25px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 75%;
+}
+
+.right {
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    padding-left: 1%;
+}
+
+.right img {
+    width: 110%;
+}
+
+
+/*--=============== Section 2 - About Me =================--*/
+
+#about {
+    background-image: url(../img/biography-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.left-area {
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    padding-left: 1%;
+}
+
+.left-area img {
+    width: 80%;
+}
+
+.right-area {
+    width: 40%;
+    float: right;
+    margin-top: 80px;
+    margin-right: 150px;
+}
+
+.right-area h2 {
+    padding: 0 auto;
+    margin: 15px 0;
+    font-size: 180%;
+    color: rgb(59, 59, 59);
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.right-area h3 {
+    padding: 0 auto;
+    margin: 15px 0;
+    font-size: 120%;
+    color: rgb(59, 59, 59);
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+.link-area {
+    margin-top: 37px;
+}
+
+.link-button {
+    margin-top: 25px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, rgb(252, 97, 162), rgb(255, 40, 129));
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 75%;
+}
+
+
+/*--=============== Section 3 - Exprience =================--*/
+
+.exp-margin {
+    margin: 30px 0 25px 0;
+}
+
+.exprience-area {
+    text-align: center;
+    color: tomato;
+    padding: 0px auto;
+    font-size: 200%;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+.half-width {
+    margin-top: 30px;
+    vertical-align: top;
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.single-expriences {
+    box-shadow: 10px 8px 35px gray;
+    border-radius: 5px;
+    height: 370px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.single-expriences h2 {
+    padding: 0 auto;
+    color: rgb(59, 59, 59);
+    word-spacing: 1px;
+    margin: 15px 0;
+    font-size: 180%;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.single-expriences h3 {
+    font-size: 120%;
+    color: tomato;
+    font-weight: 500;
+    padding: 0 auto;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+.single-expriences p {
+    padding-right: 30px;
+    color: dimgray;
+    text-align: justify;
+    margin: 25px auto;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+    line-height: 155%;
+}
+
+#expreriance {
+    background-image: url(../img/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 80vh;
+}
+
+#full-stack {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightSalmon, tomato);
+    border-image-slice: 1;
+}
+
+#baby-web {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+
+
+/*--=============== Section 4 - Project =================--*/
+
+#project {
+    background-image: url(../img/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.project-title {
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(69, 158, 173);
+    padding: 0px auto;
+    font-size: 200%;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+.project-area {
+    padding-top: 75px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-area img {
+    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.11), 0 12px 90px 0 rgba(103, 151, 255, 0.11);
+    transform: scale(1.00);
+    transition: transform 0.5s;
+    height: 250px;
+    width: auto;
+}
+
+.project-area img:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 70px 0 rgba(103, 151, 255, 0.22), 0 15px 105px 0 rgba(103, 151, 255, 0.22);
+    transform: scale(1.06);
+}
+
+
+/*--=============== Section 5 - Service =================--*/
+
+#service {
+    background-image: url(../img/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.col {
+    width: 24%;
+    float: left;
+}
+
+.offer {
+    margin: 50px auto;
+    text-align: center;
+    color: rgb(69, 158, 173);
+    padding: 0px auto;
+    font-size: 200%;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+.feature_inner {
+    margin-left: 35px;
+}
+
+.feature_item ul {
+    list-style-type: none;
+}
+
+.feature_item ul li {
+    color: dimgray;
+    text-align: center;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+    line-height: 155%;
+}
+
+.feature_item {
+    margin: auto 20px;
+    padding: 45px 25px;
+    text-align: center;
+    background: #f9f9fd;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.feature_item img {
+    margin-bottom: 35px;
+}
+
+.feature_item h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    font-family: 'Raleway';
+}
+
+.feature_item p {
+    padding: auto 10px;
+    margin-bottom: 0px;
+}
+
+.feature_item:hover {
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background: #fff;
+}
+
+
+/*--=============== Section 6 - Testimonials =================--*/
+
+#testimonial {
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: rgb(59, 59, 59);
+    background-attachment: fixed;
+}
+
+.col3 {
+    width: 30%;
+    float: left;
+    margin: auto 20px;
+}
+
+.feedback {
+    margin-left: 20px;
+}
+
+blockquote {
+    padding: 5%;
+    font-style: italic;
+    line-height: 145%;
+    text-align: justify;
+    word-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    position: relative;
+    margin-top: 10px;
+    color: rgb(105, 105, 105);
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -5px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*--=============== Section 7 - Meet Me =================--*/
+
+#Meet-me {
+    background-image: url(../img/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    background-image: linear-gradient(135deg, rgb(252, 97, 162), rgb(255, 40, 129));
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 80px;
+    box-shadow: 0 8px 60px 0 rgba(255, 103, 204, 0.192), 0 12px 90px 0 rgba(255, 103, 204, 0.199);
+    transition: all 0.2s ease;
+}
+
+.contact-main-title {
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(238, 61, 135);
+    padding: 0px auto;
+    font-size: 200%;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact-title {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 180%;
+    word-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Raleway';
+    margin-bottom: 30px;
+}
+
+.contact-sub-title {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 150%;
+    word-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    margin-bottom: 30px;
+}
+
+input {
+    margin-top: 50px;
+    font-size: 18px;
+    width: 400px;
+    padding: 16px 8px;
+    margin-left: 20%;
+    background-color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Raleway';
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+::placeholder {
+    color: rgb(238, 61, 135);
+    opacity: 1;
+    padding-left: 10px;
+}
+
+input:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.subscribe {
+    margin-left: 30px;
+    font-size: 18px;
+    padding: 16px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: all 0.2s ease;
+}
+
+.subscribe:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.subscribe a {
+    text-decoration: none;
+    color: rgb(238, 61, 135);
+    font-size: 100%;
+    word-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+
+
+/*--=============== Footer =================--*/
+
+.follow-me {
+    margin-top: 50px;
+    color: rgb(238, 61, 135);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.social-icon li {
+    padding: 10px;
+}
+
+.copywrite {
+    text-align: center;
+    padding-bottom: 20px;
+}
